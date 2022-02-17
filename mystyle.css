@@ -1,0 +1,51 @@
+body {
+    background-color: orange;
+}
+#mainImg {
+margin-top: 10px;
+border-radius: 50%;
+height: 190px;
+width: 190px;
+}
+.footer {
+    color: #FFF;
+   
+}
+
+
+
+.myNav a {
+    color: #FFF;
+   
+  
+}
+.myNav a:hover {
+    color: orange;
+}
+
+p {
+    font-size: 24px;
+}
+.card-img-bottom {
+    height: 300px;
+}
+.btn {
+    font-weight: bolder;
+}
+.btn:hover {
+    color: crimson;
+}
+@keyframes example {
+    0%   {border-left-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  
+  /* The element to apply the animation to */
+ header {
+    background-color: green;
+    animation-name: example;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+   }
