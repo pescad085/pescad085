@@ -1,5 +1,7 @@
 body {
     background-color: orange;
+    font-family: oswald;
+
 }
 #mainImg {
 margin-top: 10px;
@@ -36,16 +38,19 @@ p {
     color: crimson;
 }
 @keyframes example {
-    0%   {border-left-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    0%   {border-left-color: rgb(21, 1, 66);}
+    25%  {background-color: rgb(46, 0, 73);}
+    50%  {background-color: rgb(0, 0, 71);}
+    100% {background-color: rgb(0, 77, 0);}
   }
   
   /* The element to apply the animation to */
  header {
     background-color: green;
     animation-name: example;
-    animation-duration: 60s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
+    font-family: 'Leckerli One', cursive;
+    color: #FFF;
+    font-weight: 300;
    }
