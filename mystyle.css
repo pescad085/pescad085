@@ -13,7 +13,22 @@ width: 190px;
     color: #FFF;
    
 }
+.war {
+    font-size: 20px;
+    color: yellow;
+    background-color: blue;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    border-radius: 0px 10px 0px 10px ;
+    animation-name: warTransition;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 
+}
 
 
 .myNav a {
@@ -43,7 +58,12 @@ p {
     50%  {background-color: rgb(0, 0, 71);}
     100% {background-color: rgb(0, 77, 0);}
   }
-  
+  @keyframes warTransition {
+    0%   {font-style: normal; background-color: rgb(243, 92, 5);}
+    25%  { font-style: italic;background-color: rgb(46, 0, 73);}
+    50%  {font-style: italic ;background-color: rgb(0, 0, 71);}
+    100% {font-style: normal ; background-color: rgb(136, 11, 11);}
+  }
   /* The element to apply the animation to */
  header {
     background-color: green;
