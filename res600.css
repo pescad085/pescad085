@@ -1,5 +1,16 @@
 @media (max-width: 600px) {
 
- 
+ body {
+     font-size: 15px;
+
+ }
+ #mainImg {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    }
+    .Youtube a {
+     font-size: 2px;
+    }
     
     }

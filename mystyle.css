@@ -73,4 +73,19 @@ p {
     font-family: 'Leckerli One', cursive;
     color: #FFF;
     font-weight: 300;
+  
    }
+
+   /*Marquee below*/
+       /* The animation */
+       @keyframes marquee {
+        0%{transform: translateX(100%);}
+        100%{transform: translateX(-100%);}
+    }
+
+    /* media query to enable animation for only those who want it */
+     
+        .moveB{
+            animation: marquee 15s linear infinite;
+        }
+    
