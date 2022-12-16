@@ -4,8 +4,8 @@ body {
 
 }
 #mainImg {
-margin-top: 10px;
-border-radius: 50%;
+margin: 20px;
+
 height: 190px;
 width: 190px;
 }
@@ -22,7 +22,6 @@ width: 190px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  
     border-radius: 0px 10px 0px 10px ;
     animation-name: warTransition;
     animation-duration: 5s;
@@ -88,4 +87,7 @@ p {
         .moveB{
             animation: marquee 15s linear infinite;
         }
-    
+      .download {
+        color: white;
+        font-size: 40px;
+      }
