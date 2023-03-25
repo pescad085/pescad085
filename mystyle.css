@@ -89,11 +89,11 @@ p {
             animation: marquee 15s linear infinite;
         }
       .download {
-        color: white;
-        font-size: 40px;
+        color: rgb(255, 132, 0);
+        font-size: 35px;
       }
       .download:hover {
-        color:rgb(255, 255, 255);
+        color:rgb(255, 17, 17);
         background-color: orange;
         
       }
