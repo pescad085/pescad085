@@ -102,3 +102,6 @@ p {
         height: 600px;
       
       }
+      .openPdf {
+        display: none;
+      }
