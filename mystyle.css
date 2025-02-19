@@ -29,16 +29,103 @@ width: 250px;
     animation-iteration-count: infinite;
 
 }
+/* beginning of navbar code  */
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(34, 5, 62);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 3;
+}
+ .logo {
+  font-size: 1.3rem;
+ }
+ .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+ }
+ .nav-links li {
+  margin: 0 1rem;
+  font-size: 30px;
+ }
+ .nav-links a {
+  text-decoration: none;
 
-.myNav a {
-    color: #FFF;
+ }
+ .nav-links a:hover {
+  text-decoration: none;
+
+ }
+ .nav-links li:hover {
+    
+       background-color: rgb(255, 153, 0);
+      
+
+ }
+  .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+  }
+  .menu-toggle .bar {
+      height: 3px;
+      width: 25px;
+      background-color: #ffffff;
+      margin: 3px 0;
+      z-index: 2;
+  }
+
+  @media screen and (max-width: 700px) {
+  .menu-toggle {
+      display: flex;
+  }
+   .nav-links {
+    color: white;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #01123d;
    
-  
-}
-.myNav a:hover {
-    color: orange;
-}
+   }
+   .nav-links li {
+      text-align: center;
+      margin: 1rem 0;
+   }
+   .nav-links.active {
+      display: flex;
+   }
+   
+
+  }
+
+
+
+
+
+
+
+
+
+
+/* end of navbar code  */
+
+
+
+
+
+
+
+
+
+
 
 p {
     font-size: 24px;
@@ -66,11 +153,12 @@ p {
   }
   /* The element to apply the animation to */
  header {
-    background-color: green;
+    font-size: 20px;
+    background-color: rgb(122, 146, 122);
     animation-name: example;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    font-family: 'Leckerli One', cursive;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
     color: #FFF;
     font-weight: 300;
   
@@ -106,6 +194,7 @@ p {
         animation-iteration-count: infinite;
         animation-direction: alternate;
       }
+      
      @keyframes myflash {
       0% {
         color: red;
@@ -114,7 +203,9 @@ p {
         color: rgb(89, 0, 255);
       }
      }
-
+    .container-fluid {
+      z-index: 2;
+    }
 
       .myFrame {
         width: 100%;
