@@ -35,7 +35,7 @@ width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(34, 5, 62);
+  background-color: rgb(45, 6, 81);
   color: #fff;
   padding: 0.5rem 1rem;
   z-index: 3;
@@ -55,15 +55,16 @@ width: 250px;
  }
  .nav-links a {
   text-decoration: none;
-
+color: white;
  }
  .nav-links a:hover {
   text-decoration: none;
+  
 
  }
  .nav-links li:hover {
-    
-       background-color: rgb(255, 153, 0);
+    color: rgb(27, 6, 6);
+     background-color: #da0e0e;;
       
 
  }
@@ -177,13 +178,13 @@ p {
             animation: marquee 15s linear infinite;
         }
       .download {
-        color: rgb(34, 0, 255);
+        color: rgb(40, 38, 52);
         font-size: 20px;
         text-decoration: none;
       }
       .download:hover {
-        color:rgb(255, 17, 17);
-        background-color: orange;
+        color:rgb(255, 255, 255);
+        background-color: rgb(17, 15, 13);
       }
       .download::before {
         font-size: 30px;
