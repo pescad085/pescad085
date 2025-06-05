@@ -12,4 +12,45 @@
     .openPdf {
         display: block;
       }
+      .first-text-main {
+     background-color: #01123d;
+     color: #FFF;
+     font-size: 25px;
+     padding: 10px
+
+      }
+      .second-text-main {
+     background-color: #292929df;
+     color: #FFF;
+     font-size: 25px;
+        padding: 10px
+
+      }
+      .third-text-main {
+     background-color: #860b0bdf;
+     color: #FFF;
+     font-size: 25px;
+        padding: 10px
+
+      }
+            .forth-text-main {
+     background-color: #1f7901df;
+     color: #FFF;
+     font-size: 25px;
+        padding: 10px
+
+      }
+                  .fifth-text-main {
+     background-color: #0415a8df;
+     color: #FFF;
+     font-size: 25px;
+        padding: 10px
+
+      }
+      
+
+
+
+
+
     }
