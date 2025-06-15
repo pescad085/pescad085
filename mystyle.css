@@ -1,34 +1,37 @@
-
 body {
-    background-color: rgb(255, 255, 255);
-    font-family: oswald;
+  background-color: rgb(255, 255, 255);
+  font-family: oswald;
 
 }
+
 #mainImg {
-margin: 20px;
+  margin: 20px;
 
-height: 250px;
-width: 250px;
+  height: 250px;
+  width: 250px;
 }
+
 .footer {
-    color: #FFF;
-   
-}
-.Youtube {
-    font-size: 20px;
-    color: yellow;
-    background-color: blue;
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0px 10px 0px 10px ;
-    animation-name: warTransition;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+  color: #FFF;
 
 }
+
+.Youtube {
+  font-size: 20px;
+  color: yellow;
+  background-color: blue;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0px 10px 0px 10px;
+  animation-name: warTransition;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+
 /* beginning of navbar code  */
 
 .navbar {
@@ -40,72 +43,84 @@ width: 250px;
   padding: 0.5rem 1rem;
   z-index: 3;
 }
- .logo {
+
+.logo {
   font-size: 1.3rem;
- }
- .nav-links {
+}
+
+.nav-links {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
- }
- .nav-links li {
+}
+
+.nav-links li {
   margin: 0 1rem;
   font-size: 30px;
- }
- .nav-links a {
+}
+
+.nav-links a {
   text-decoration: none;
-color: white;
- }
- .nav-links a:hover {
+  color: white;
+}
+
+.nav-links a:hover {
   text-decoration: none;
-  
 
- }
- .nav-links li:hover {
-    color: rgb(27, 6, 6);
-     background-color: #da0e0e;;
-      
 
- }
+}
+
+.nav-links li:hover {
+  color: rgb(27, 6, 6);
+  background-color: #da0e0e;
+  ;
+
+
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #ffffff;
+  margin: 3px 0;
+  z-index: 2;
+}
+
+@media screen and (max-width: 700px) {
   .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-  }
-  .menu-toggle .bar {
-      height: 3px;
-      width: 25px;
-      background-color: #ffffff;
-      margin: 3px 0;
-      z-index: 2;
+    display: flex;
   }
 
-  @media screen and (max-width: 700px) {
-  .menu-toggle {
-      display: flex;
-  }
-   .nav-links {
+  .nav-links {
     color: white;
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      background-color: #01123d;
-   
-   }
-   .nav-links li {
-      text-align: center;
-      margin: 1rem 0;
-   }
-   .nav-links.active {
-      display: flex;
-   }
-   
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #01123d;
 
   }
+
+  .nav-links li {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+
+}
 
 
 
@@ -129,121 +144,230 @@ color: white;
 
 
 p {
-    font-size: 24px;
+  font-size: 24px;
 }
+
 .card-img-bottom {
-    height: 300px;
+  height: 300px;
 }
+
 .btn {
-    font-weight: bolder;
+  font-weight: bolder;
 }
+
 .btn:hover {
-    color: crimson;
+  color: crimson;
+
 }
-@keyframes example {
-    0%   {border-left-color: rgb(21, 1, 66);}
-    25%  {background-color: rgb(46, 0, 73);}
-    50%  {background-color: rgb(0, 0, 71);}
-    100% {background-color: rgb(0, 77, 0);}
+
+@keyframes text-color-trans {
+  0% {
+    border-left-color: rgb(216, 209, 232);
+    color: #260370;
+       background-color: rgb(255, 238, 4);
   }
-  @keyframes warTransition {
-    0%   {font-style: normal; background-color: rgb(243, 92, 5);}
-    25%  { font-style: italic;background-color: rgb(46, 0, 73);}
-    50%  {font-style: italic ;background-color: rgb(0, 0, 71);}
-    100% {font-style: normal ; background-color: rgb(136, 11, 11);}
+
+  25% {
+   color: #260370;
+    background-color: rgb(5, 218, 9);
   }
-  /* The element to apply the animation to */
- header {
-    font-size: 20px;
-    background-color: rgb(122, 146, 122);
-    animation-name: example;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    font-family: Georgia, 'Times New Roman', Times, sans-serif;
-    color: #FFF;
-    font-weight: 300;
-  
-   }
 
-   /*Marquee below*/
-       /* The animation */
-       @keyframes marquee {
-        0%{transform: translateX(100%);}
-        100%{transform: translateX(-100%);}
-    }
+  50% {
+ color: #260370;
+    background-color: rgb(5, 178, 25);
 
-    /* media query to enable animation for only those who want it */
-     
-        .moveB{
-            animation: marquee 15s linear infinite;
-        }
-      .download {
-        color: rgb(40, 38, 52);
-        font-size: 20px;
-        text-decoration: none;
-      }
-      .download:hover {
-        color:rgb(255, 255, 255);
-        background-color: rgb(17, 15, 13);
-      }
-      .download::before {
-        font-size: 30px;
-        content: "|";
-        animation-name: myflash;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-      }
-      
-     @keyframes myflash {
-      0% {
-        color: red;
-      }
-      100% {
-        color: rgb(89, 0, 255);
-      }
-     }
-    .container-fluid {
-      z-index: 2;
-    }
+  }
 
-      .myFrame {
-        width: 100%;
-        height: 600px;
-      
-      }
-      .openPdf {
-        display: none;
-      }
-      .first-text-main {
-     background-color: #01123d;
-     color: #FFF;
-     font-size: 50px;
+  100% {
+    color: #260370;
+    background-color: rgb(255, 238, 4);
+    
+  }
+}
 
-      }
-      .second-text-main {
-     background-color: #292929df;
-     color: #FFF;
-     font-size: 50px;
+@keyframes warTransition {
+  0% {
+    font-style: normal;
+    background-color: rgb(188, 90, 34);
+  }
 
-      }
-      .third-text-main {
-     background-color: #860b0bdf;
-     color: #FFF;
-     font-size: 50px;
+  25% {
+    font-style: italic;
+    background-color: rgb(46, 0, 73);
+  }
 
-      }
-            .forth-text-main {
-     background-color: #1f7901df;
-     color: #FFF;
-     font-size: 50px;
+  50% {
+    font-style: italic;
+    background-color: rgb(0, 0, 71);
+  }
 
-      }
-                  .fifth-text-main {
-     background-color: #0415a8df;
-     color: #FFF;
-     font-size: 50px;
+  100% {
+    font-style: normal;
+    background-color: rgb(136, 11, 11);
+  }
+}
 
-      }
-      
+/* The element to apply the animation to */
+header {
+  font-size: 20px;
+  background-color: rgb(122, 146, 122);
+  animation-name: text-color-trans;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  font-family: Georgia, 'Times New Roman', Times, sans-serif;
+  color: #FFF;
+  font-weight: 300;
+
+}
+
+/*Marquee below*/
+/* The animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* media query to enable animation for only those who want it */
+
+.moveB {
+  animation: marquee 15s linear infinite;
+}
+
+.download {
+    animation: text-color-trans 7s linear infinite;
+  color: rgb(40, 38, 52);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.download:hover {
+  color: rgb(255, 255, 255);
+
+}
+
+.download::before {
+  font-size: 30px;
+  content: "|";
+  animation-name: myflash;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes myflash {
+  0% {
+    color: red;
+  }
+
+  100% {
+    color: rgb(89, 0, 255);
+  }
+}
+
+.container-fluid {
+  z-index: 2;
+}
+
+.myFrame {
+  width: 100%;
+  height: 600px;
+
+}
+
+.openPdf {
+  display: none;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(20px, 0);
+  }
+
+  50% {
+    transform: translate(20px, 20px);
+  }
+
+  75% {
+    transform: translate(0, 20px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.first-text-main {
+  animation: wave 5s linear infinite;
+
+  background-color: #01123d;
+  color: #FFF;
+  font-size: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+
+}
+
+.second-text-main {
+
+  animation: wave 6s linear infinite;
+  background-color: #292929df;
+  color: #FFF;
+  font-size: 50px;
+    margin-left: auto;
+  margin-right: auto;
+  width: 700px
+
+
+
+}
+
+.third-text-main {
+  animation: wave 7s linear infinite;
+  background-color: #860b0bdf;
+  color: #FFF;
+  font-size: 50px;
+  max-width: 700px;
+    margin-left: auto;
+  margin-right: auto;
+  width: auto;
+ 
+
+}
+
+.forth-text-main {
+  animation: wave 10s linear infinite;
+  background-color: #1f7901df;
+  color: #FFF;
+  font-size: 50px;
+  max-width: 700px;
+    margin-left: auto;
+  margin-right: auto;
+  width: auto;
+
+
+}
+
+.fifth-text-main {
+  animation: wave 5s linear infinite;
+  background-color: #0415a8df;
+  color: #FFF;
+  font-size: 50px;
+  max-width: 700px;
+    margin-left: auto;
+  margin-right: auto;
+  width: auto;
+
+
+}
