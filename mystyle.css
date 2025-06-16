@@ -163,26 +163,27 @@ p {
 @keyframes text-color-trans {
   0% {
     border-left-color: rgb(216, 209, 232);
-    color: #dcff73;
-    background-color: white;
+    color: #e9c460;
+  font-size: 20px;
 
   }
 
   25% {
    color: #70030e;
-       background-color: white;
  
+   font-size: 30px;
   }
 
   50% {
- color: #ffffff;
-     background-color: rgb(33, 3, 103);
+ color: #9f8803;
+      font-size: 30px;
 
   }
 
   100% {
-     color: #ffffff;
-     background-color: rgb(33, 3, 103);
+      font-size: 20px;
+     color: #01454d;
+
 
     
   }
@@ -214,7 +215,7 @@ p {
 header {
   font-size: 20px;
   background-color: rgb(122, 146, 122);
-  animation-name: text-color-trans;
+  animation-name: warTransition;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   font-family: Georgia, 'Times New Roman', Times, sans-serif;
