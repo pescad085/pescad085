@@ -6,21 +6,32 @@
 }
 
 :root {
-    /* Professional Color Palette */
-    --primary-dark: #1a3a52;        /* Deep navy blue */
-    --primary: #2563eb;             /* Vibrant professional blue */
-    --secondary: #f97316;           /* Professional orange accent */
-    --accent: #10b981;              /* Teal/green accent */
-    --text-dark: #1f2937;           /* Dark gray for text */
-    --text-light: #6b7280;          /* Light gray for secondary text */
-    --bg-light: #f9fafb;            /* Very light gray */
-    --bg-white: #ffffff;            /* Pure white */
-    --border-color: #e5e7eb;        /* Light border */
-    
-    /* Gradients - Professional */
-    --gradient-primary: linear-gradient(135deg, #1a3a52 0%, #2563eb 100%);
-    --gradient-accent: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
-    --gradient-bg: linear-gradient(135deg, #f0f4f8 0%, #d9e8f5 50%, #f0f4f8 100%);
+    /* New Color Palette (Midnight Teal & Coral) */
+    --primary-dark: #064e3b;
+    --primary: #0ea5a4;
+    --secondary: #fb7185;
+    --accent: #7c3aed;
+    --success: #10b981;
+    --danger: #ef4444;
+    --text-dark: #0f172a;
+    --text-light: #64748b;
+    --bg-light: #f6fbfb;
+    --bg-white: #ffffff;
+    --border-color: #e6eef0;
+
+    /* RGB helpers for rgba usages */
+    --primary-rgb: 14,165,164;
+    --primary-dark-rgb: 6,78,59;
+    --secondary-rgb: 251,113,133;
+    --accent-rgb: 124,58,237;
+    --success-rgb: 16,185,129;
+    --danger-rgb: 239,68,68;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, rgba(var(--primary-dark-rgb),1) 0%, rgba(var(--primary-rgb),1) 100%);
+    --gradient-accent: linear-gradient(135deg, rgba(var(--secondary-rgb),1) 0%, rgb(205, 29, 49) 100%);
+    --gradient-bg: linear-gradient(135deg, #f7fbfb 0%, #e8f7f6 50%, #f7fbfb 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(var(--primary-dark-rgb),0.95) 0%, rgba(var(--primary-rgb),0.85) 100%);
     
     /* Typography */
     --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -160,7 +171,7 @@ body {
 
 .nav-link:hover {
     color: var(--primary);
-    background-color: rgba(37, 99, 235, 0.05);
+    background-color: rgba(var(--primary-rgb), 0.05);
 }
 
 .nav-link:hover::before {
@@ -214,7 +225,7 @@ body {
 .hero {
     height: auto;
     padding: 80px 0;
-    background: linear-gradient(135deg, rgba(26, 58, 82, 0.9) 0%, rgba(37, 99, 235, 0.85) 100%);
+    background: var(--gradient-hero);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -321,7 +332,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(26, 58, 82, 0.95) 0%, rgba(37, 99, 235, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(var(--primary-dark-rgb),0.95) 0%, rgba(var(--primary-rgb),0.9) 100%);
     color: var(--bg-white);
     display: flex;
     flex-direction: column;
@@ -497,7 +508,7 @@ section h2 {
 
 .profile-image img:hover {
     transform: rotateZ(6deg);
-    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 20px 40px rgba(var(--primary-rgb),0.3);
 }
 
 /* ==================== RESOURCE CARDS ==================== */
@@ -871,14 +882,14 @@ section h2 {
     }
 
     .nav-link:hover {
-        background: rgba(37, 99, 235, 0.08);
+        background: rgba(var(--primary-rgb), 0.08);
         color: var(--primary);
         padding-left: 24px;
         transition: var(--transition-default);
     }
 
     .nav-link.active {
-        background: linear-gradient(90deg, rgba(37, 99, 235, 0.15) 0%, transparent 100%);
+        background: linear-gradient(90deg, rgba(var(--primary-rgb), 0.15) 0%, transparent 100%);
         color: var(--primary);
         border-left: 4px solid var(--primary);
         padding-left: 16px;
@@ -975,12 +986,12 @@ section h2 {
     }
 
     .nav-link:hover {
-        background: rgba(37, 99, 235, 0.1);
+        background: rgba(var(--primary-rgb), 0.1);
         padding-left: 28px;
     }
 
     .nav-link.active {
-        background: rgba(37, 99, 235, 0.12);
+        background: rgba(var(--primary-rgb), 0.12);
         border-left: 5px solid var(--primary);
         padding-left: 13px;
     }
@@ -1126,17 +1137,17 @@ section h2 {
 
 /* Strong selected states for readability */
 .choice-btn.correct {
-    background: green;
-    color: rgb(245, 245, 245);
-    border-color: var(--accent);
-    box-shadow: 0 8px 20px rgba(16,185,129,0.18);
+    background: var(--success);
+    color: var(--bg-white);
+    border-color: var(--success);
+    box-shadow: 0 8px 20px rgba(var(--success-rgb),0.18);
 }
 
 .choice-btn.incorrect {
-    background: #ff0000;
+    background: var(--danger);
     color: var(--bg-white);
-    border-color: #e85b5b;
-    box-shadow: 0 8px 20px rgba(232,91,91,0.18);
+    border-color: rgba(var(--danger-rgb),0.9);
+    box-shadow: 0 8px 20px rgba(var(--danger-rgb),0.18);
 }
 h2 {
     color: white;
