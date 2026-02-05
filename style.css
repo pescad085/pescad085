@@ -7,7 +7,7 @@
 
 :root {
     /* New Color Palette (Midnight Teal & Coral) */
-    --primary-dark: #ffffff;
+    --primary-dark: #a23a3a;
     --primary: #079191;
     --secondary: #fb7185;
     --accent: #7c3aed;
@@ -30,7 +30,7 @@
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, rgba(var(--primary-dark-rgb),1) 0%, rgba(var(--primary-rgb),1) 100%);
     --gradient-accent: linear-gradient(135deg, rgba(var(--secondary-rgb),1) 0%, rgb(205, 29, 49) 100%);
-    --gradient-bg: linear-gradient(135deg, #f7fbfb 0%, #e8f7f6 50%, #f7fbfb 100%);
+    --gradient-bg: linear-gradient(135deg, #cfa831 0%, #2a5f5b 50%, #093434 100%);
     --gradient-hero: linear-gradient(135deg, rgba(var(--primary-dark-rgb),0.95) 0%, rgba(var(--primary-rgb),0.85) 100%);
     
     /* Typography */
