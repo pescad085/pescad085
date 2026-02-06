@@ -7,7 +7,7 @@
 
 :root {
     /* New Color Palette (Midnight Teal & Coral) */
-    --primary-dark: #a23a3a;
+    --primary-dark: #220a0a;
     --primary: #079191;
     --secondary: #fb7185;
     --accent: #7c3aed;
@@ -30,14 +30,14 @@
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, rgba(var(--primary-dark-rgb),1) 0%, rgba(var(--primary-rgb),1) 100%);
     --gradient-accent: linear-gradient(135deg, rgba(var(--secondary-rgb),1) 0%, rgb(205, 29, 49) 100%);
-    --gradient-bg: linear-gradient(135deg, #cfa831 0%, #2a5f5b 50%, #093434 100%);
+    --gradient-bg: linear-gradient(135deg, #150f00 0%, #23235e 50%, #1e3dd9 100%);
     --gradient-hero: linear-gradient(135deg, rgba(var(--primary-dark-rgb),0.95) 0%, rgba(var(--primary-rgb),0.85) 100%);
     
     /* Typography */
     --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-    --font-size-base: 16px;
-    --line-height-base: 1.6;
+    --font-size-base: 17px;
+    --line-height-base: 1.7;
     
     /* Spacing */
     --spacing-xs: 4px;
@@ -136,11 +136,6 @@ body {
     display: flex;
     list-style: none;
     gap: var(--spacing-md);
-    margin: 0;
-}
-
-.nav-item {
-    display: inline-block;
 }
 
 .nav-link {
@@ -243,8 +238,6 @@ body {
     max-width: 900px;
     padding: var(--spacing-lg);
     animation: fadeInUp 0.8s ease 0.2s both;
-    position: relative;
-    z-index: 2;
 }
 
 .hero-content h1 {
@@ -395,9 +388,6 @@ section h2 {
     align-items: center;
     gap: var(--spacing-lg);
     padding: 0 var(--spacing-lg);
-}
-
-.marquee-container {
     position: relative;
 }
 
@@ -493,7 +483,6 @@ section h2 {
 
 /* ==================== PROFILE IMAGE ==================== */
 .profile-image {
-    text-align: center;
     margin-bottom: var(--spacing-2xl);
 }
 
@@ -525,7 +514,6 @@ section h2 {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     transition: var(--transition-default);
-    text-align: center;
     border: 1px solid var(--border-color);
 }
 
@@ -572,11 +560,6 @@ section h2 {
     box-shadow: var(--shadow-lg);
 }
 
-.btn-primary {
-    background: var(--primary);
-    color: var(--bg-white);
-}
-
 .btn-secondary {
     background: transparent;
     color: var(--primary);
@@ -599,7 +582,6 @@ section h2 {
 }
 
 .what-i-do h2 {
-    font-size: 32px;
     color: var(--primary-dark);
     margin-bottom: var(--spacing-lg);
 }
@@ -679,15 +661,6 @@ section h2 {
     overflow: hidden;
 }
 
-.book-cover i {
-    position: relative;
-    z-index: 2;
-}
-
-.book-info {
-    padding: var(--spacing-xl);
-}
-
 .book-info h3 {
     font-size: 22px;
     font-weight: 600;
@@ -716,7 +689,6 @@ section h2 {
 }
 
 .contact-section > .container > p {
-    text-align: center;
     font-size: 18px;
     margin-bottom: var(--spacing-2xl);
     color: var(--text-light);
@@ -756,17 +728,20 @@ section h2 {
 
 /* ==================== FOOTER ==================== */
 .footer {
-    background: var(--primary-dark);
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
     color: var(--bg-white);
     padding: var(--spacing-xl) 0;
     text-align: center;
     margin-top: var(--spacing-3xl);
-    border-top: 3px solid var(--secondary);
+    border-top: 3px solid var(--primary);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .footer p {
-    font-size: 15px;
-    opacity: 0.9;
+    font-size: 16px;
+    opacity: 1;
+    font-weight: 500;
+    letter-spacing: 0.3px;
 }
 
 /* ==================== ANIMATIONS ==================== */
@@ -1096,11 +1071,9 @@ section h2 {
     margin-bottom: var(--spacing-lg);
 }
 .choices {
-        font-size: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: var(--spacing-md);
-
 }
 .choice-btn {
     text-align: left;
